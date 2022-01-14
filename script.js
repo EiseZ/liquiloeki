@@ -14,10 +14,10 @@ function imgclicked() {
     let img = document.getElementById("loeki");
     img.setAttribute("draggable", false);
     img.style.top =
-        Math.floor(Math.random() * (window.innerHeight - 100)).toString() +
+        Math.floor(Math.random() * (window.innerHeight - 200)).toString() +
         "px";
     img.style.left =
-        Math.floor(Math.random() * (window.innerWidth - 100)).toString() + "px";
+        Math.floor(Math.random() * (window.innerWidth - 200)).toString() + "px";
 }
 
 function decreaseTime() {
@@ -33,7 +33,7 @@ function endGame() {
     let timeText = document.getElementById("time");
     let img = document.getElementById("loeki");
     timeText.remove();
-    if (score >= 40) {
+    if (score >= 30) {
         scoreText.innerHTML = "Wow, je heb Loeki vermoord!";
     } else {
         scoreText.innerHTML = "AH, jammer, Loeki is ontsnapt";
